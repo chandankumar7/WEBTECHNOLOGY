@@ -156,19 +156,11 @@
         function validation()
         {
               
+            
+            
             //validating the user name
             var username=document.getElementById('un');
-            var password=document.getElementById('pw');
-            var email=document.getElementById('email');
-            var phone=document.getElementById('cn');
-            
-            
             var usercheck=/^[A-Za-z ]{5,20}$/;//username
-            var x=/^[7-9]{1}[0-9]{9}$/;//phone number
-           // var psswordcheck=/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
-           // var emailcheck=/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9]+).([a-z]{2,10})(.[a-z]{2,10})?$/;
-             
-            
             if(username.value.trim()=="")
             {
                 alert("User name cannot be empty");
@@ -186,7 +178,15 @@
                 return false;
             }
             
-             
+            
+            
+            
+            
+            
+            
+            //validate user Email Id 
+            var email=document.getElementById('email');
+            var emailcheck=/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9]+).([a-z]{2,10})(.[a-z]{2,10})?$/;
             
          if(email.value.trim()=="")
                 {
@@ -198,6 +198,24 @@
             
             
             
+             if(!emailcheck.test(email.value))
+            {
+                alert("please enter valid email id");
+                username.style.border="5px solid blue";
+                document.getElementById('eml').style.visibility="visible";
+                return false;
+            }
+            
+            
+            
+            
+            
+            
+            
+            //valiadte user Password
+             var password=document.getElementById('pw');
+             var psswordcheck=/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+            
            if(password.value.trim().length<5)
                 {
                     alert("Password has to be 5 characters long");
@@ -205,6 +223,22 @@
                     document.getElementById('ps').style.visibility="visible";
                     return false;
                 }
+            
+              if(!psswordcheck.test(password.value))
+            {
+                alert("User Name must be atleast 5 characters long");
+                username.style.border="5px solid blue";
+                document.getElementById('ps').style.visibility="visible";
+                return false;
+            }
+            
+            
+            
+            
+            
+            //valiadte user Phone number
+             var phone=document.getElementById('cn');
+             var x=/^[7-9]{1}[0-9]{9}$/;//phone number
             
            if(phone.value.trim()=="")
                 {
