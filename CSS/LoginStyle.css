@@ -1,0 +1,59 @@
+/*--------------------------------------External- CSS File for  Login Page-----------------------------------------------*/
+/*Backround effects*/
+body {
+
+    background-color: #4493e3;/*Background property*/
+    text-align: center;
+    background-image: url("bg-01.jpg") no repeat;
+}
+
+/*Rectangular box of the form Effects*/
+.main {
+    width: 500px; /*Border Property*/
+    height: 500px;
+    margin: 7em auto;/*CSS margin Property*/
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);/*CSS Color Property*/
+  
+    font-family: sans-serif;
+}
+
+/*Label of the username*/
+.label1 {
+    border-radius: 2em; /*Border Property*/
+    border-style: none;
+    height: 25px;
+    padding: 12px;
+}
+
+/*login button effects*/
+.sign {
+    color: #8C55AA;
+    font-weight: bold;
+    font-size: 17px;
+    border-style: none;
+    border-radius: 2em;
+}
+
+a:link { /*Anchor Pseudo-classes*/
+   
+    color: red;
+}
+a:visited {  /* visited link */
+    color: green;
+}
+
+
+a:hover {/* mouse over link */
+    color: hotpink;
+}
+
+
+a:active {/* selected link */
+    color: blue;
+}
+
+h1::first-line {  /*CSS Pseudo-elements*/
+    color: whitesmoke;
+    font-variant: small-caps;
+}

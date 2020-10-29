@@ -1,0 +1,213 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Men Page</title>
+</head>
+
+<style>
+    header {
+        background-image: url(Assets/bg-01.jpg);
+    }
+
+    .label {
+        /*-----Class as selector*/
+        margin-left: 20px;
+        border-radius: 1em;
+        border: none;
+    }
+    .search {
+        margin-left: 15px;
+        border-radius: 1em;
+        font-family: sans-serif;
+    }
+    .cart {
+        width: 70px;
+        height: 70px;
+       margin-left: 30px;
+    }
+    .Div {
+        /* Center the DIV horizontally */
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .fixed-header {
+        width: 100%;
+        position: static;
+        background: aqua;
+        padding: 10px 0;
+        /*Padding Property*/
+    }
+
+    nav a {
+        color: black;
+        /*CSS Color Property*/
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+        height: 5px;
+    }
+
+    a:link {
+        /*Anchor Pseudo-classes*/
+        color: red;
+    }
+
+    a:visited {
+        /* visited link */
+        color: green;
+    }
+
+
+    a:hover {
+        /* mouse over link */
+        color: hotpink;
+    }
+
+    a:active {
+        /* selected link */
+        color: blue;
+    }
+
+    .imgaes {
+        width: 300px;
+        height: 350px;
+        padding: 40px;
+        margin: 20px;
+    }
+
+    .buttons1 {
+        margin-left: 40px;
+        padding-left: 10px;
+        /*Padding Property*/
+        padding-right: 20px;
+        /*Padding Property*/
+        border-radius: 1em;
+        margin-bottom: 20px;
+    }
+
+    .buttons2 {
+        margin-left: 300px;
+        border-radius: 1em;
+        margin-bottom: 20px;
+    }
+
+    .buttons3 {
+        margin-left: 300px;
+        border-radius: 1em;
+        margin-bottom: 20px;
+    }
+
+    /*-----------footer CSS--------------*/
+    #footer {
+
+        background-image: linear-gradient(to right, #a517ba, blue);
+        padding: 0;
+        color: #fff;
+    }
+
+    .footer-box {
+        padding: 20px;
+    }
+
+    hr {
+        background-color: #fff;
+    }
+
+    .copyright {
+
+        padding-bottom: 10px;
+        /*Padding Property*/
+        text-align: center;
+    }
+
+    .bottomspace {
+        margin-bottom: 10px;
+    }
+
+    h1,
+    h2,
+    p {
+        /*Grouping selector.*/
+        color: whitesmoke;
+        font-family: Arial;
+    }
+
+    div.static {
+        position: static;
+        /*Positioning Property-1*/
+        border: 3px solid #73AD21;
+        text-align: center;
+        font-weight: bold;
+        font-family: Ariel;
+    }
+</style>
+
+<body>
+
+    <header>
+        <a href="Home%20page.html"><img src="Assets/HomeLogo.png" width="100px" padding-left="10px"> </a>
+        <input class="label" type="text" name="text" width="10px">
+        <button class="search">Search</button>
+        <img class="cart" src="Assets/Cartlogo.png">
+        <button class="search" style="margin-left:100px">
+            <a href="Login%20Page.html">Login</a> </button>
+        <button class="search" style="margin-left:100px">Account</button><br><br>
+    </header>
+
+
+    <div class="fixed-header">
+        <div class="Div">
+            <nav>
+                <a href="Home%20page.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="static">
+        MENS CATEGORY
+    </div>
+
+
+    <div>
+        <img class="imgaes" src="Assets/mens/photo-1489987707025-afc232f7ea0f.jpg">
+        <img class="imgaes" src="Assets/mens/photo-1521572163474-6864f9cf17ab.jpg">
+        <img class="imgaes" src="Assets/mens/photo-1583743814966-8936f5b7be1a.jpg">
+        <button class="buttons1">Add to Cart</button><label>Price:$40</label>
+        <button class="buttons2">Add to Cart</button><label>Price:$55</label>
+        <button class="buttons3">Add to Cart</button><label>Price:$50</label>
+
+        <img class="imgaes" src="Assets/mens/1.jpg">
+        <img class="imgaes" src="Assets/mens/2.jpg">
+        <img class="imgaes" src="Assets/mens/3.jpg">
+        <button class="buttons1">Add to Cart</button><label>Price:$45</label>
+        <button class="buttons2">Add to Cart</button><label>Price:$75</label>
+        <button class="buttons3">Add to Cart</button><label>Price:$90</label>
+
+    </div>
+    <!-----------------------------------Footer Tag-------------------------------------------->
+    <footer id="footer">
+        <!----------------------id as a selector------------------------------------------->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-box">
+                    <h2><b>CONTACT US </b></h2>
+                    <h3> Phone no. +1 123456789</h3>
+                    <p> Email : xyz@gmail.com</p>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Website crafted by Chandan kumar gupta | Copyright &copy; 2020 E-CommerceCGK.com</p>
+        </div>
+    </footer>
+
+</body></html>
