@@ -213,9 +213,9 @@
              var password=document.getElementById('pw');
              var psswordcheck=/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
             
-           if(password.value.trim().length<5)
+           if(password.value.trim()=="")
                 {
-                    alert("Password has to be 5 characters long");
+                    alert("Password cannnot be empty");
                     password.style.border="5px solid red";
                     document.getElementById('ps').style.visibility="visible";
                     return false;
@@ -223,7 +223,7 @@
             
               if(!psswordcheck.test(password.value))
             {
-                alert("User Name must be atleast 5 characters long");
+                alert("Password  must be atleast 8 characters long");
                 password.style.border="5px solid blue";
                 document.getElementById('ps').style.visibility="visible";
                 return false;
@@ -239,7 +239,7 @@
             
            if(phone.value.trim()=="")
                 {
-                    alert("Please enter the phone number");
+                    alert("Phone number cannot be empty");
                    phone.style.border="5px solid red";
                     document.getElementById('pno').style.visibility="visible";
                     return false;
