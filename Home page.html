@@ -132,12 +132,14 @@
         font-size: 20px;
     }
 
-    span p::first-letter { /*CSS Pseudo-elements*/
+/*
+    span p::first-letter { CSS Pseudo-elements
        
         color: #ff0000;
         font-size: xx-large;
        }
-    }
+    
+*/
 
 </style>
 
@@ -184,14 +186,13 @@
     <footer id="footer">
         <!----------------------id as a selector------------------------------------------->
         <div class="container">
-            <p><b>CONTACT US </b></p>
-            <p> Phone no. +1 123456789</p>
-            <span>
-                <!----------------------------------------------*Inherited properties---->
-                <p> Email : xyz@gmail.com</p>
-                <p>Address: Panaji Goa</p>
-            </span>
-            <p>Pincode:403002</p>
+            <div class="row">
+                <div class="col-md-6 footer-box">
+                    <p><b>CONTACT US </b></p>
+                    <p> Phone no. +1 123456789</p>
+                    <p> Email : xyz@gmail.com</p>
+                </div>
+            </div>
             <hr>
             <p class="copyright">Website crafted by Chandan kumar gupta | Copyright &copy; 2020 E-CommerceCGK.com</p>
         </div>
