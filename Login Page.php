@@ -1,5 +1,6 @@
 <?php
      include 'conn.php';
+     // session_start();
     if(isset($_POST['done']))
     {
        $username=$_POST['username'];
@@ -7,9 +8,12 @@
        $q= "INSERT INTO `login`(`username`, `password`) VALUES ('$username','$password')";
 
        $query=mysqli_query($con,$q);
-         header('location:display.php');
+       header('location:display.php');
 
     }
+
+
+   
 
 ?>
 
